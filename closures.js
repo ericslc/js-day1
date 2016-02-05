@@ -10,10 +10,11 @@ var outer = function(){
 //Invoke outer saving the return value into another variable called 'inner'.
 
   //Code Here
-
+var inner = outer;
 //Once you do that, invoke inner.
 
   //Code Here
+inner();
 
 
 
@@ -36,6 +37,7 @@ var callFriend = function(){
 
 
 
+
 //Next Problem
 
 
@@ -45,11 +47,12 @@ var callFriend = function(){
 */
 
   //Code Here
-  var count = makeCounter();
-  count(); // 1
-  count(); // 2
-  count(); // 3
-  count(); // 4
+  // //var count = makeCounter()
+  //
+  // count(); // 1
+  // count(); // 2
+  // count(); // 3
+  // count(); // 4
 
 
 
@@ -123,5 +126,3 @@ var callFriend = function(){
 
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
-
-

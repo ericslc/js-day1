@@ -6,14 +6,14 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-  function isTyler(name){
-    if(name === 'Tyer'){
-      return true;
-    }
-    else{
-      return false
-    }
+function isTyler(name){
+  if(name === 'Tyler'){
+    return true;
   }
+  else{
+    return false;
+  }
+}
 
 //Next problem
 
@@ -37,11 +37,7 @@ function getName(){
 
   //Code Here
   function welcome(){
-    function getName(){
-      var name = prompt("What is your name?")
-      return name;
-    }
-    return "Welcome, " + getName();
+        return "Welcome, " + getName();
   }
 
 
@@ -53,7 +49,7 @@ function getName(){
 //What is the difference between arguments and parameters?
 
   //Answer Here
-arguments are inside the function, parameters are outside and passinformation into the function.
+//arguments are inside the function, parameters are outside and passinformation into the function.
 
 //Next problem
 
@@ -63,7 +59,7 @@ arguments are inside the function, parameters are outside and passinformation in
 
 
   //Answer Here
-0, "", undefined, null, false, nan,
+//0, "", undefined, null, false, nan,
 
 
 //Next Problem
@@ -73,17 +69,17 @@ arguments are inside the function, parameters are outside and passinformation in
 //Create a function called myName that returns your name
 
   //Code Here
-  function myName(){
-    return "Eric";
-  }
+//  function myName(){
+//    return "Eric";
+//  }
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-var newMyName = myName();
+//var newMyName = myName;
 //Now alert the result of invoking newMyName
-alert(newMyName);
+//alert(newMyName());
 
 
 //Next problem
@@ -94,15 +90,14 @@ alert(newMyName);
 
   //Code Here
 function outerFn(){
-  function intraFn(){
+  return function(){
     return "Eric";
   }
-  return intraFn();
-}
+  }
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
   var innerFn = outerFn();
 
 //Now invoke innerFn.
-innerFn;
+innerFn();
