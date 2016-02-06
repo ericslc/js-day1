@@ -28,14 +28,14 @@ function getName(){
   return name;
 }
 
-//Next Problem
-
-
-
-//Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
-//then alerts "Welcome, " plus whatever the users name is.
-
-  //Code Here
+// //Next Problem
+//
+//
+//
+// //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
+// //then alerts "Welcome, " plus whatever the users name is.
+//
+//   //Code Here
   function welcome(){
         return "Welcome, " + getName();
   }
@@ -69,17 +69,17 @@ function getName(){
 //Create a function called myName that returns your name
 
   //Code Here
-//  function myName(){
-//    return "Eric";
-//  }
+ // function myName(){
+  //  return "Eric";
+ // }
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-//var newMyName = myName;
-//Now alert the result of invoking newMyName
-//alert(newMyName());
+// var newMyName = myName;
+// Now alert the result of invoking newMyName
+// alert(newMyName());
 
 
 //Next problem

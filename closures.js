@@ -34,12 +34,16 @@ var callFriend = function(){
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
   //Code Here
+var number = callFriend();
+console.log(number("435-215-9248"));
 
 
 
 
 //Next Problem
-
+function counter(name){
+  var name2 = 
+}
 
 
 /*
@@ -47,7 +51,10 @@ var callFriend = function(){
 */
 
   //Code Here
-  // //var count = makeCounter()
+  function makeCounter(){
+var counter = count;
+  }
+
   //
   // count(); // 1
   // count(); // 2
@@ -65,7 +72,12 @@ var callFriend = function(){
 */
 
   //Code Here
-
+function codeLove(str){
+  return "I love code";
+  function codeFriend(codeLove){
+    return
+  }
+}
 
 
 //Next Problem
@@ -82,32 +94,38 @@ var callFriend = function(){
 
 
 
-/*
-  var counter = function(){
+
+/*  var counter = function(){
     for (var i=1; i<=5; i++) {
-      setTimeout( function timer(){
+      setTimeout( function timer(i ){
           console.log( i );
-      }, i*1000 );
+      }, i*1000, i );
     }
   };
-
-  Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
-
-    //Answer Here
-
-
-  Now, run the function in your console and note what happpens.
-
-  Was your answer right or wrong?
-
-    //Answer Here
-
-
-  Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc) (Note: No unit test for this one because of the timeout)
+*/
+//   Above you have a function named counter. Examine the function (without running the code) then below write what you expect to happen when the funciton is invoked. *Hint: setTimeout calls a function or evaluates an expression after a specified number of milliseconds.
+//
+//     //Answer Here
+// I expect it to count from 1 - 5, logging 1-5 with a delay between each count
+//
+//   Now, run the function in your console and note what happpens.
+//
+//   Was your answer right or wrong?
+//
+//     //Answer Here
+//
+// right
+/*  Fix the counter function so that it works the way you expect it to work. (logging 1 then 2 then 3, etc) (Note: No unit test for this one because of the timeout)
 */
 
     //Code Here
-
+    var counter = function(){
+      for (var i=1; i<=5; i++) {
+        setTimeout( function timer(i){
+            console.log( i );
+        }( i*1000, i);
+      };
+    }
 
 
 //Next Problem
@@ -115,14 +133,21 @@ var callFriend = function(){
 
 
 /*
-  Make the following code work
-
-  funcArray[0]() //0
+  Make the following code work*/
+var funcArray = [
+function(){return 0},
+function(){return 1},
+function(){return 2},
+function(){return 3},
+function(){return 4},
+function(){return 5},
+];
+  console.log(funcArray[0]()) //0
   funcArray[1]() //1
   funcArray[2]() //2
   funcArray[3]() //3
   funcArray[4]() //4
   funcArray[5]() //5
 
-  *Hint: Don't let this fool you. Break down what's really happening here.
+  /*Hint: Don't let this fool you. Break down what's really happening here.
 */

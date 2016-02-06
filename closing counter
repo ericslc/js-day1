@@ -1,0 +1,49 @@
+function counter(name){
+  var name2 = name;
+  var happy = 3;
+  return function(){
+    happy++;
+    console.log("Thanks for sticking in there " + name2 + "! You are " + happy + " happy points happy.");
+  };
+}
+
+
+var AndrewFn = counter("Andrew");
+var JasonFn = counter("Jason");
+
+AndrewFn();
+AndrewFn();
+AndrewFn();
+AndrewFn();
+AndrewFn();
+
+JasonFn();
+function createTeam(){
+  var players = [];
+  return {
+    addPlayer: function(newPlayer){
+      players.push(newPlayer)
+    },
+    getPlayers: function(){
+      return players;
+    }
+  }
+}
+
+//Is Making a closure for us
+var cardinals = createTeam()
+cardinals.addPlayer("Larry");
+console.log(cardinals.getPlayers());
+cardinals.addPlayer("Carson");
+console.log(cardinals.getPlayers());
+cardinals.addPlayer("Patrick");
+console.log(cardinals.getPlayers());
+
+//Is Making a 2nd closure for us
+var jazz = createTeam()
+jazz.addPlayer("Gordon");
+console.log(jazz.getPlayers());
+jazz.addPlayer("Rootie");
+console.log(jazz.getPlayers());
+jazz.addPlayer("Alec");
+console.log(jazz.getPlayers());
