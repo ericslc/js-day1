@@ -41,25 +41,23 @@ console.log(number("435-215-9248"));
 
 
 //Next Problem
-function counter(name){
-  var name2 = 
-}
-
 
 /*
   Write a function called makeCounter that makes the following code work properly.
 */
 
   //Code Here
-  function makeCounter(){
-var counter = count;
+  funtion makeCounter(){
+    var counting = 0;
+    return function(){
+      counting++;
+    };
   }
-
-  //
-  // count(); // 1
-  // count(); // 2
-  // count(); // 3
-  // count(); // 4
+  var count = makeCounter();
+  count(); // 1
+  count(); // 2
+  count(); // 3
+  count(); // 4
 
 
 
@@ -75,8 +73,11 @@ var counter = count;
 function codeLove(str){
   return "I love code";
   function codeFriend(codeLove){
-    return
-  }
+    function codeEcho(){
+
+    };
+    return codeEcho;
+  };
 }
 
 
