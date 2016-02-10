@@ -47,13 +47,10 @@ console.log(number("435-215-9248"));
 */
 
   //Code Here
-  funtion makeCounter(){
-    var counting = 0;
-    return function(){
-      counting++;
-    };
-  }
-  var count = makeCounter();
+
+  function makeCounter(){
+    return(count + 1);
+  };
   count(); // 1
   count(); // 2
   count(); // 3
@@ -124,7 +121,7 @@ function codeLove(str){
       for (var i=1; i<=5; i++) {
         setTimeout( function timer(i){
             console.log( i );
-        }( i*1000, i);
+        }(i*1000), i);
       };
     }
 
